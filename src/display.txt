@@ -1,0 +1,8 @@
+In CSS, position: relative and position: absolute are used to position an element.
+
+position: relative: This positions an element relative to its normal position. Setting top, right, bottom, and left properties will cause the element to be adjusted away from its normal position. Other elements will not adjust to fill the gap.
+
+position: absolute: This positions an element relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. The top, right, bottom, and left properties are used to position the element.
+
+In your code, position: relative on the div allows the footer div with position: absolute to position itself at the bottom of the parent div, not the whole page.
+
